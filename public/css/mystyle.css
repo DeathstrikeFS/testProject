@@ -4,7 +4,7 @@ body {
 background-color:white;
 }
 
-p b {font-family:Arial, "Times New Roman", Times, serif;}
+p {font-family:Arial, "Times New Roman", Times, serif;}
 
 h1 {
 font-size:2em;
@@ -17,10 +17,9 @@ padding-top:0px;
 }
 
 #logo {
-width:240;
-height:148;
+width:220;
+height:136;
 padding-top:20px;
-bottom-margin:50px;
 }
 
 #navBar {
@@ -31,6 +30,8 @@ padding:0;
 
 #navBar li {
 float:left;
+padding-top:20px;
+padding-bottom:20px;
 }
 
 #navBar a {
