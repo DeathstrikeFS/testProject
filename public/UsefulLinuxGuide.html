@@ -1,0 +1,277 @@
+<html>
+	<head>
+		<link rel="stylesheet" href="css/blueprint/screen.css" type="text/css" media="screen, projection">
+		<link rel="stylesheet" href="css/blueprint/print.css" type="text/css" media="print"> 
+		<!--[if lt IE 8]>
+		<link rel="stylesheet" href="css/blueprint/ie.css" type="text/css" media="screen, projection">
+		<![endif]-->
+		<link rel="stylesheet" type="text/css" href="css/mystyle.css">
+    		<script src="pages/jquery.js"></script>
+		<!--
+		/* Split Menu Buttons: created: Aug 8th, 2012 by DynamicDrive.com. This notice must stay intact for usage 
+		*  Author: Dynamic Drive at http://www.dynamicdrive.com/
+		*  Visit http://www.dynamicdrive.com/ for full source code
+		*/-->
+		
+		<link rel="stylesheet" type="text/css" href="css/splitmenubuttons.css" />
+		<script type='text/javascript' src='https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js'></script>
+		<script src="jquery/splitmenubuttons.js"></script>
+
+<script>
+
+jQuery(function(){ // on document load
+	$('a[data-showmenu]').splitmenubuttonMenu() // Add split button menu to links with "data-showmenu" attr
+})
+
+</script>
+
+	</head>
+
+<body>
+
+
+	<div class="topBar">
+		<img src="images/topBar.png">
+	</div>
+
+	<div class ="container">
+		<div class="span-24 last">
+			<a href="index.html"><img id="topLogo" src="images/francissmithnetpro.png"></a>
+		</div>
+		
+		<div class="span-24">
+			<p id="publicIP">Your Public IP Address is:	 
+				<b>
+					<script type="application/javascript">
+    							function getip(json){
+     			 				document.write(json.ip); // alerts the ip address
+   			 				}
+					</script>
+					<script type="application/javascript" src="http://jsonip.appspot.com/?callback=getip"></script>
+
+				</b> 
+			</p>
+			<hr id="hrHeader">
+		</div>
+
+		<div class="span-20 border">
+		<div class="box">
+			<b>19 December 2012</b> Last Updated at 12:16
+			<h1>Useful Linux Command Guide</h1>
+			<hr>
+			<h2>General</h2>
+			<table>
+			<tr>
+				<td>
+					Command
+				</td>
+				<td>
+					Description
+				</td>
+			</tr>
+
+			<tr>
+				<td>
+					cd
+				</td>
+				<td>
+					Change Directory
+				</td>
+			</tr>
+
+			<tr>
+				<td>
+					ls
+				</td>
+				<td>
+					Lists file in current directory
+				</td>
+			</tr>
+
+			<tr>
+				<td>
+					rm -rf [dirName]
+				</td>
+				<td>
+					Recurively removes directory and all sub-directory (-r). (-f) Force deletes child directories without prompting the usery
+				</td>
+			</tr>
+			<tr>
+				<td>
+					Find -name [filename]
+				</td>
+				<td>
+					Searches for the specified filename
+				</td>
+			</tr>
+			<tr>
+				<td>
+					Which [command]
+				</td>
+				<td>
+					Locates a specified command
+				</td>
+			</tr>
+			<tr>
+				<td>
+					tar - zxvf 
+				</td>
+				<td>
+					Untar to current directory -t list file contents -x extract -f use archive file -v verbosely lists files processed -z gzip
+
+				</td>
+			</tr>
+			</table>
+			<tr>
+				<td>
+					ls
+				</td>
+				<td>
+					Lists file in current directory
+				</td>
+			</tr>
+			<tr>
+				<td>
+					ls
+				</td>
+				<td>
+					Lists file in current directory
+				</td>
+			</tr>
+			<tr>
+				<td>
+					ls
+				</td>
+				<td>
+					Lists file in current directory
+				</td>
+			</tr>
+			<tr>
+				<td>
+					ls
+				</td>
+				<td>
+					Lists file in current directory
+				</td>
+			</tr>
+			<tr>
+				<td>
+					ls
+				</td>
+				<td>
+					Lists file in current directory
+				</td>
+			</tr>
+			<tr>
+				<td>
+					ls
+				</td>
+				<td>
+					Lists file in current directory
+				</td>
+			</tr>
+
+			<tr>
+			</table>
+				<li>cd: Change Directory</li>
+				<li>ls: List Files</li>
+				<li>rm -rf [dirName]: Recurively removes directories and all sub-directories with “-r”. “-f” does not prompt for each child directory.</li>
+				<li>lsusb: Lists USB devices</li>
+				<li>fdisk -l: Lists filesystems and their mount points on root</li>
+				<li>mount: Used to attach filesystems to root</li>
+				<li>umount: Detaches a filesystem from root</li>
+				<li>tar -zxvf: Untar to current directory (-t list file contents -x extract -f use archive file -v verbosely lists files processed -z gzip)</li>
+				<li>df -h: Show disk space available in 'human readable' format</li>
+				<li>run startup script (debian) - Edit /etc/rc.local</li>
+				<li>uname -r: Shows OS Kernel</li>
+				<li>kill -9 pid: Kills a process by its PID</li>
+				<li>adduser <username>: runs the add user script</li>
+				<li>/etc/sudoers: Configuration file which grants a standard user the ability to run sudo commands</li>
+			</ul>				
+			<br>
+			<h2>Network</h2>
+			<ul>
+				<li>ifconfig: Display information on Local Network Adapters</li>
+				<li>ifup/down <interface>: Brings an interface up or down</li>
+				<li>ifconfig <interface> <ip address> netmask <subnet mask>: Assigns a static IP address to a selected interface</li>
+				<li>route add default gw <ip address> <interface> - Add a default gateway</li>
+				<li>dhclient <interface>: Sends/Renews a dhcp request</li>
+				<li>arp -s <ip> <MAC>: Enter a static ARP entry</li>
+				<li>/etc/resolv.conf: Configuration file for nameserver entries. Example entry - nameserver 161.76.9.1</li>
+			</ul>
+
+			<h3>Assign a static IP at startup example:</h3>
+			<ul>
+				<li>/etc/networking/interfaces: Configuration file for network interfaces. Lines beginning with auto “are used to identify the physical interfaces to be brought up when ifup is run with the -a option. (This option is used by the system boot scripts.)”. Auto just brings an interface up at startup</li>	
+			</ul>
+			<ul class ="noBullet">
+				<li>auto eth0 #Initialises eth0 on startup</li>
+				<li>iface eth0 inet static #Static Configuration</li>
+				<li>address 192.168.0.42</li>
+				<li>network 192.168.0.0</li>
+				<li>netmask 255.255.255.0</li>
+				<li>broadcast 192.168.0.255</li>
+				<li>gateway 192.168.0.1</li>
+				<p> for DHCP </p>
+				<li>auto eth0</li>
+				<li>iface eth0 inet dhcp</li>
+			</ul>
+
+			<h2>GNOME Specific</h2>
+			gedit: Text Editor
+
+			<h2>KDE Specific</h2>
+			kwrite: Text Editor
+			Kate: Text Editor
+
+			<br>
+			<div class="navBack">
+				<a href="http://www.google.co.uk">« Previous</a>	
+			</div>
+
+			<div class="navForward">
+				<a href="http://www.google.co.uk">Next »</a>	
+			</div>
+		</div>
+
+				
+				
+		</div>
+		<div class="span-4 last">
+			<center>Contents</center>
+			<br>
+			<hr>
+			<a href="about.html" class="splitmenubutton" data-showmenu="About" data-splitmenu="false" data-menucolors="white, white">About</a>
+			<br>
+						<a href="index.html" class="splitmenubutton" data-showmenu="About" data-splitmenu="false" data-menucolors="white, white">News / Update</a>
+			<br>
+			<a href="#" class="splitmenubutton" data-showmenu="Articles" data-splitmenu="false" data-menucolors="white, white">Articles</a>
+			<br>
+			<a href="#" class="splitmenubutton" data-showmenu="Links" data-splitmenu="false" data-menucolors="white, white">Links</a>
+			<br>
+
+			<ul id="Articles" class="splitdropdown">
+				<li><a href="UsefulLinuxGuide.html">Linux Command Guide</a></li>
+
+		</ul>
+	
+		</div>
+		
+
+		
+	
+
+		<div class="span-24">
+			<hr id="hrFooter" />
+			
+			<ul class="noBulletFooter">
+				<li>F SMITH © 2012 | <a href="index.html">ABOUT</a></li>
+			</ul>
+					  
+		</div>
+	</div>
+</body>
+</html>
+
+<!--24 columns of 30px, 10px wide gutters, and a horizontal width of 950px. Horizontal guides are provided at 18px or 1.5 em line-height for 12 px base font.-->
+
