@@ -1,0 +1,35 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Art title:</b>
+  <%= @article.art_title %>
+</p>
+
+<p>
+  <b>Subtitle:</b>
+  <%= @article.subtitle %>
+</p>
+
+<p>
+  <b>Date posted:</b>
+  <%= @article.date_posted %>
+</p>
+
+<p>
+  <b>Time posted:</b>
+  <%= @article.time_posted %>
+</p>
+
+<p>
+  <b>User:</b>
+  <%= @article.user_id %>
+</p>
+
+<p>
+  <b>Body:</b>
+  <%= @article.body %>
+</p>
+
+
+<%= link_to 'Edit', edit_article_path(@article) %> |
+<%= link_to 'Back', articles_path %>
