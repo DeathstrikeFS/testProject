@@ -4,14 +4,18 @@ one:
   art_title: MyString
   subtitle: MyString
   date_posted: 2013-05-07
-  time_posted: 2013-05-07 13:29:12
+  time_posted: 2013-05-07 14:47:13
   user_id: 1
+  key_stage: 1
+  subject: MyString
   body: MyText
 
 two:
   art_title: MyString
   subtitle: MyString
   date_posted: 2013-05-07
-  time_posted: 2013-05-07 13:29:12
+  time_posted: 2013-05-07 14:47:13
   user_id: 1
+  key_stage: 1
+  subject: MyString
   body: MyText
