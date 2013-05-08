@@ -9,6 +9,6 @@
 <body>
 
 <%= yield %>
-
+<p><%= yield(:p) %></p>
 </body>
 </html>
