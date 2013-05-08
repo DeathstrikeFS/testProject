@@ -1,4 +1,9 @@
 TestProject::Application.routes.draw do
+# looks at static_pages controller and executes method in home
+  get "static_pages/home"
+
+  get "static_pages/help"
+
   resources :articles
 
 

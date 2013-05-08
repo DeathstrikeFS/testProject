@@ -7,6 +7,8 @@ gem 'rails', '3.2.13'
 
 group :development do
   gem 'sqlite3'
+# added for static tutorial
+  gem 'rspec-rails', '2.11.0' 
 end
 
 gem 'json'
@@ -39,6 +41,11 @@ gem 'jquery-rails', '2.0.2'
 #enabled for Heroku Setup
 group :production do
   gem 'pg', '0.12.2'
+end
+
+# added for static tutorial
+group :test do
+  gem 'capybara', '1.1.2'
 end
 
 gem 'therubyracer'
